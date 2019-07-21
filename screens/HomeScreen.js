@@ -6,7 +6,7 @@ class HomeScreen extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Welcome To Tree Streak!/Text>
+        <Text>Welcome To Tree Streak!</Text>
       </View>
     );
   }
