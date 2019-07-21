@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
 import { Text, View } from 'react-native';
+import { createStackNavigator, createAppContainer} from 'react-navigation';
+import HomeScreen from './screens/HomeScreen';
+import FriendScreen from './screens/FriendScreen';
 
-export default class HelloWorldApp extends Component {
+const MainNav = createStackNavigator(
+    {
+    Home: HomeScreen,
+    Friends: FriendScreen,
+    },
+    {
+    initialRouteName: 'Home',
+    }
+);
+
+const AppContainer = createAppContainer(MainNav);
+
+export default class App extends React.Component {
   render() {
-    return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text>Tree Streak</Text>
-      </View>
-    );
+    return <AppContainer />;
   }
 }
