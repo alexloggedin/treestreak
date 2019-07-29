@@ -9,8 +9,8 @@ class App extends React.Component {
     render() {
         return(
             <Swiper loop={false} showsPagination={false} index={1}>
-                    <FriendScreen />
-                    <HomeScreen />
+                <FriendScreen />
+                <HomeScreen />
             </Swiper>
         )
     }
