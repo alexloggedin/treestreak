@@ -11,6 +11,7 @@ class App extends React.Component {
             <Swiper loop={false} showsPagination={false} index={1}>
                 <FriendScreen />
                 <HomeScreen />
+		<NewsScreen />
             </Swiper>
         )
     }
