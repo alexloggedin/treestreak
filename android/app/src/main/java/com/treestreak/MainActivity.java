@@ -1,4 +1,4 @@
-package com.treestreak;
+package com.treestreak.android;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

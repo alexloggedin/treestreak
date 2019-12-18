@@ -1,4 +1,4 @@
-package com.treestreak;
+package com.treestreak.android;
 
 import android.app.Application;
 import android.content.Context;
