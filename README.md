@@ -6,3 +6,4 @@ This project was made using React-Native.
 
 ## Dependecies:
 * react-native-firebase [LINK](https://invertase.io/oss/react-native-firebase/)
+* react-navigation [LINK](https://reactnavigation.org/en/)
