@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Text, View} from 'react-native';
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import {createTopTabNavigator} from 'react-navigation-tabs';
+import {createMaterialTopTabNavigator} from 'react-navigation-tabs';
 import LoginScreen from './src/screens/Auth/LoginScreen';
 import RegisterScreen from './src/screens/Auth/RegisterScreen';
 
@@ -10,7 +10,7 @@ import HomeScreen from './src/screens/App/HomeScreen';
 import StreakScreen from './src/screens/App/StreakScreen';
 
 //Add Screens As they are created here
-const AppStack = createTopTabNavigator(
+const AppStack = createMaterialTopTabNavigator(
   {
     Streaks: StreakScreen,
     Home: HomeScreen,
