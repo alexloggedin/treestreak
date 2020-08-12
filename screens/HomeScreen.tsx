@@ -25,6 +25,7 @@ class HomeScreen extends React.Component<any, any>{
                 </View>
 
                 <View>
+                    <Text h2>Daily Tasks</Text>
                     <TaskList tasks={taskList}/>
                 </View>
             </SafeAreaView>

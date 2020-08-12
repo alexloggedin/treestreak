@@ -14,12 +14,6 @@ class TaskList extends React.Component<TaskListProps, any>{
         // TODO: Sort and place finished tasks below unfinished ones 
         let {tasks} = this.props;
         return (
-            <View>
-                <Text h3>
-                    Daily Tasks
-                </Text>
-                <Divider />
-                <View style={styles.listContainer}>
                 <ScrollView>
                 {tasks.map((task, i) => {
                         return (
@@ -35,8 +29,6 @@ class TaskList extends React.Component<TaskListProps, any>{
                     })
                 }
                 </ScrollView>
-                </View>
-            </View>
         )
     }
 }

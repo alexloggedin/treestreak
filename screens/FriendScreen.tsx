@@ -28,13 +28,13 @@ class FriendScreen extends React.Component<any, any>{
     
         return (
             <SafeAreaView style={styles.container}>
-                <KeyboardAvoidingView>
+                <KeyboardAvoidingView style={{flex:1}}>
                 <View>
                     <Text h1>
                         Friends
                  </Text>
                     <SearchBar
-                        lightTheme
+                        lightTheme={true}
                         placeholder="Search Friends..."
                         onChangeText={(query: string) => (this.setState({ query }))}
                         value={query}
@@ -127,6 +127,7 @@ const Friends: (Friend)[] = [
 const styles = StyleSheet.create({
     container:{
         width: '95%',
+        flex: 1,
         alignSelf: "center"
     }
   

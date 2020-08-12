@@ -31,6 +31,7 @@ class EventList extends React.Component<EventListProps, any>{
                 subtitle={item.description}
                 topDivider
                 bottomDivider
+                containerStyle={{margin: 5}}
             />
         )
     }
@@ -39,9 +40,10 @@ class EventList extends React.Component<EventListProps, any>{
         // TODO: Sort friends by streak length 
         let {eventList} = this.props;
         return (
-            <View>
-                <FlatList data={eventList} renderItem={this.renderEvent} keyExtractor={item => item.id.toString()}/>
-            </View>
+                <FlatList data={eventList} 
+                renderItem={this.renderEvent} 
+                keyExtractor={item => item.id.toString()}
+                />
         )
     }
 }
