@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     create:{
         width:"80%", 
         alignSelf: "center",
-        marginBottom: 20,
+        margin: 20,
     }
   
   })
@@ -90,41 +90,41 @@ const Events :Event[] = [
         description: "Event Description that will be long but can be truncated.",
         location: "1234 Park Place",
         date: "Sep 2 5:00PM",
-        id: 1
+        id: 3
      },
      {
         name: "Event #3",
         description: "Event Description that will be long but can be truncated.",
         location: "1234 Park Place",
         date: "Aug 16 9:00AM",
-        id: 2
+        id: 4
      },
      {
         name: "Event #2",
         description: "Event Description that will be long but can be truncated.",
         location: "1234 Park Place",
         date: "Sep 2 5:00PM",
-        id: 1
+        id: 5
      },
      {
         name: "Event #3",
         description: "Event Description that will be long but can be truncated.",
         location: "1234 Park Place",
         date: "Aug 16 9:00AM",
-        id: 2
+        id: 6
      },
      {
         name: "Event #2",
         description: "Event Description that will be long but can be truncated.",
         location: "1234 Park Place",
         date: "Sep 2 5:00PM",
-        id: 1
+        id: 7
      },
      {
         name: "Event #3",
         description: "Event Description that will be long but can be truncated.",
         location: "1234 Park Place",
         date: "Aug 16 9:00AM",
-        id: 2
+        id: 8
      }
 ]

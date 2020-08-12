@@ -34,6 +34,7 @@ class FriendScreen extends React.Component<any, any>{
                         Friends
                  </Text>
                     <SearchBar
+                        round
                         lightTheme={true}
                         placeholder="Search Friends..."
                         onChangeText={(query: string) => (this.setState({ query }))}

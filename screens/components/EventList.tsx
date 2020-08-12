@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, FlatList} from 'react-native';
 
-import { ListItem, Text } from 'react-native-elements';
+import { ListItem, Text, Card } from 'react-native-elements';
 
 
 interface EventListProps {
@@ -14,24 +14,24 @@ class EventList extends React.Component<EventListProps, any>{
         const date = item.date.split(" ");
         
         const dateElement = (
-            <View>
+            <Card>
                 <Text>
                     {`${date[0]} ${date[1]}`}
                 </Text>
                 <Text>
                     {date[2]}
                 </Text>
-            </View>
+            </Card>
         )
         return (
             <ListItem
                 children
                 leftElement={dateElement}
-                title={item.description}
+                title={item.name}
                 subtitle={item.description}
                 topDivider
                 bottomDivider
-                containerStyle={{margin: 5}}
+                containerStyle={{margin: 2}}
             />
         )
     }
